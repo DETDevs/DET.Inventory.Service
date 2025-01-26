@@ -1,0 +1,6 @@
+@DET.Inventory.Service_HostAddress = http://localhost:5267
+
+GET {{DET.Inventory.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
