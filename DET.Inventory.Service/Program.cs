@@ -1,3 +1,5 @@
+using DET.Inventory.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,9 +11,7 @@ builder.Services.AddSwaggerGen();
 
 //Configuración de servicios para la aplicación
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
-builder.Services.AddSingleton<DET.Inventory.DataAccess.Interfaces.IConnectionManager, DET.Inventory.DataAccess.ConnectionManager>();
-builder.Services.AddSingleton<DET.Inventory.DataAccess.Interfaces.IProductos, DET.Inventory.DataAccess.Productos >();
-builder.Services.AddSingleton<DET.Inventory.BusinessLogic.Interfaces.IProductos, DET.Inventory.BusinessLogic.Productos>();
+builder.Services.AddInventoryServices();
 
 var app = builder.Build();
 
