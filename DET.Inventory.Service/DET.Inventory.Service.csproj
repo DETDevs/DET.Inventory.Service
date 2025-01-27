@@ -12,6 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DET.Inventory.BusinessLogic.Interfaces\DET.Inventory.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\DET.Inventory.BusinessLogic\DET.Inventory.BusinessLogic.csproj" />
     <ProjectReference Include="..\DET.Inventory.DataAccess.Interfaces\DET.Inventory.DataAccess.Interfaces.csproj" />
     <ProjectReference Include="..\DET.Inventory.DataAccess\DET.Inventory.DataAccess.csproj" />
     <ProjectReference Include="..\DET.Inventory.Models\DET.Inventory.Models.csproj" />

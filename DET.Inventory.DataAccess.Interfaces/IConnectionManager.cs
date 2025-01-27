@@ -9,6 +9,6 @@ namespace DET.Inventory.DataAccess.Interfaces
 {
     public interface IConnectionManager
     {
-        IDbConnection GetConnectionString(string key);
+        IDbConnection GetConnection(string key);
     }
 }

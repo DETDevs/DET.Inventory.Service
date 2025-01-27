@@ -15,7 +15,7 @@ namespace DET.Inventory.DataAccess
             this.configuration = configuration;
         }
 
-        public IDbConnection GetConnectionString(string key)
+        public IDbConnection GetConnection(string key)
         {
             return new SqlConnection(ConfigurationExtensions.GetConnectionString(configuration, $"{InventoryConnectionString_KEY}"));
         }
