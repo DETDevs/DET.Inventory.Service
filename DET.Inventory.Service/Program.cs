@@ -1,3 +1,6 @@
+using DET.Inventory.DataAccess;
+using DET.Inventory.DataAccess.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//Configuración de servicios para la aplicación
+builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+builder.Services.AddSingleton<IConnectionManager, ConnectionManager>();
 
 var app = builder.Build();
 
