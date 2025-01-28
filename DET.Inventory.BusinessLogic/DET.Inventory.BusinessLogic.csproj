@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DET.Inventory.BusinessLogic.Interfaces\DET.Inventory.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\DET.Inventory.DataAccess.Interfaces\DET.Inventory.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\DET.Inventory.Models\DET.Inventory.Models.csproj" />
+  </ItemGroup>
+
+</Project>

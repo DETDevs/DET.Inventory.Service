@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DET.Inventory.Service", "DET.Inventory.Service\DET.Inventory.Service.csproj", "{40EBAC7C-66D3-44A1-AE64-9663C4BA849C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Inventory.Service", "DET.Inventory.Service\DET.Inventory.Service.csproj", "{40EBAC7C-66D3-44A1-AE64-9663C4BA849C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Inventory.BusinessLogic", "DET.Inventory.BusinessLogic\DET.Inventory.BusinessLogic.csproj", "{C059F136-4AE3-48F1-8E09-766A6B3EFAF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Inventory.BusinessLogic.Interfaces", "DET.Inventory.BusinessLogic.Interfaces\DET.Inventory.BusinessLogic.Interfaces.csproj", "{DD09000E-8B42-4F91-8C65-59C33C13F79B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Inventory.DataAccess", "DET.Inventory.DataAccess\DET.Inventory.DataAccess.csproj", "{2C3CB952-E4D1-4A0E-9048-08111C4841F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Inventory.DataAccess.Interfaces", "DET.Inventory.DataAccess.Interfaces\DET.Inventory.DataAccess.Interfaces.csproj", "{9227E4A1-1CCF-44DD-BA51-DFBB915438A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Inventory.Models", "DET.Inventory.Models\DET.Inventory.Models.csproj", "{A6466B06-FB8E-4F29-89A8-AE7EFD614F7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DET.Inventory.Extensions", "DET.Inventory.Extensions\DET.Inventory.Extensions.csproj", "{07CAEBB3-5683-4653-88A8-87BEFFD354A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,30 @@ Global
 		{40EBAC7C-66D3-44A1-AE64-9663C4BA849C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40EBAC7C-66D3-44A1-AE64-9663C4BA849C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40EBAC7C-66D3-44A1-AE64-9663C4BA849C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C059F136-4AE3-48F1-8E09-766A6B3EFAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C059F136-4AE3-48F1-8E09-766A6B3EFAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C059F136-4AE3-48F1-8E09-766A6B3EFAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C059F136-4AE3-48F1-8E09-766A6B3EFAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD09000E-8B42-4F91-8C65-59C33C13F79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD09000E-8B42-4F91-8C65-59C33C13F79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD09000E-8B42-4F91-8C65-59C33C13F79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD09000E-8B42-4F91-8C65-59C33C13F79B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3CB952-E4D1-4A0E-9048-08111C4841F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3CB952-E4D1-4A0E-9048-08111C4841F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3CB952-E4D1-4A0E-9048-08111C4841F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3CB952-E4D1-4A0E-9048-08111C4841F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9227E4A1-1CCF-44DD-BA51-DFBB915438A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9227E4A1-1CCF-44DD-BA51-DFBB915438A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9227E4A1-1CCF-44DD-BA51-DFBB915438A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9227E4A1-1CCF-44DD-BA51-DFBB915438A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6466B06-FB8E-4F29-89A8-AE7EFD614F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6466B06-FB8E-4F29-89A8-AE7EFD614F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6466B06-FB8E-4F29-89A8-AE7EFD614F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6466B06-FB8E-4F29-89A8-AE7EFD614F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07CAEBB3-5683-4653-88A8-87BEFFD354A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07CAEBB3-5683-4653-88A8-87BEFFD354A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07CAEBB3-5683-4653-88A8-87BEFFD354A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07CAEBB3-5683-4653-88A8-87BEFFD354A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
