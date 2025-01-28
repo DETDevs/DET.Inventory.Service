@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DET.Inventory.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace DET.Inventory.DataAccess.Interfaces
 {
     public interface ICategoria
     {
+        Task<List<Categoria>> ListarCategorias();
     }
 }
